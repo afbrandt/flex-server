@@ -1,0 +1,12 @@
+{
+  "name"         : "flex-server",
+  "version"      : "0.1",
+  "dependencies" : {
+    "express" : "4.1.1",
+    "body-parser" : "1.0.2",
+    "mongoskin" : "1.4.1"
+  },
+  "engines" : {
+    "node"  : "0.10.x"
+  }
+}
