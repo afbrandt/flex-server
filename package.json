@@ -1,10 +1,17 @@
 {
   "name"         : "flex-server",
-  "version"      : "0.1.0",
+  "description"  : "Back end for mobile app Flex",
+  "version"      : "0.1.1",
   "dependencies" : {
     "express" : "4.1.1",
     "body-parser" : "1.0.2",
-    "mongoskin" : "1.4.1"
+    "mongoskin" : "1.4.1",
+    "cheerio" : "0.18.0",
+    "request" : "2.53.0"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/afbrandt/flex-server.git"
   },
   "engines" : {
     "node"  : "0.10.x"

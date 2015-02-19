@@ -1,6 +1,9 @@
 var express = require('express'),
   mongoskin = require('mongoskin'),
-  bodyParser = require('body-parser')
+  bodyParser = require('body-parser'),
+  cheerio = require('cheerio'),
+  request = require('request')
+
 
 var app = express()
 
