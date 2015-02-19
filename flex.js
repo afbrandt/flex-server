@@ -6,14 +6,18 @@ var app = express()
 
 app.use(bodyParser())
 
-var db = mongoskin.db('mongodb://@localhost:27017/flex-dev', {safe:true})
+var db = mongoskin.db(process.env.DEV_MONGODB, {safe:true})
 
 app.get('/', function(req, res) {
   res.send('I am awake...')
 })
 
-app.get('/v1/product/', function(req, res) {
+app.get('/v1/product', function(req, res) {
   res.send('enter valid UPC')
+})
+
+app.get('/v1/product/:upc', function(req, res) {
+  res.send(req.params.upc)
 })
 
 app.listen(3000)
